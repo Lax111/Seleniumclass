@@ -32,9 +32,14 @@ public class Day2 {
 		 
 		 //Assertion
 		 
-		WebElement heading = driver.findElement(By.cssSelector("#header_container> div.header_secondary_container> span"));
-		
+		//WebElement heading = driver.findElement(By.cssSelector("#header_container> div.header_secondary_container> span"));
+		//#header_container > div.header_secondary_container > span
 		//WebElement heading = driver.findElement(By.cssSelector("#item_0_title_link > div.header_secondary_container>span"));
+		//WebElement heading = driver.findElement(By.cssSelector("#item_4_title_link > div"));
+		WebElement heading = driver.findElement(By.cssSelector("#item_3_title_link > div"));
+		
+		
+		
 		
 		if(heading.isDisplayed()) {
 			System.out.println("Test case pass");
