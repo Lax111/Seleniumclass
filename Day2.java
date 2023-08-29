@@ -18,6 +18,8 @@ public class Day2 {
 		 //Selecting the element
 		 
 		 driver.get("https://www.saucedemo.com/");
+		 driver.manage().window().maximize();
+		 
 		 
 		WebElement username = driver.findElement(By.cssSelector("#user-name"));
 		WebElement password = driver.findElement(By.cssSelector("#password"));
@@ -36,9 +38,15 @@ public class Day2 {
 		//#header_container > div.header_secondary_container > span
 		//WebElement heading = driver.findElement(By.cssSelector("#item_0_title_link > div.header_secondary_container>span"));
 		//WebElement heading = driver.findElement(By.cssSelector("#item_4_title_link > div"));
-		WebElement heading = driver.findElement(By.cssSelector("#item_3_title_link > div"));
+		//WebElement heading = driver.findElement(By.cssSelector("#item_3_title_link > div"));
+		
+		WebElement heading = driver.findElement(By.cssSelector("#item_5_title_link > div"));
+
+
 		
 		
+		
+	
 		
 		
 		if(heading.isDisplayed()) {
