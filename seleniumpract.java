@@ -9,6 +9,8 @@ public class seleniumpract {
 		//System.setProperty("webdriver.Chrome.driver","C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
 		System.setProperty("webdriver.Chrome.driver","C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
+		 
+		
 		 driver.get("https://www.amazon.com/");
 		//driver.get("https://www.google.com/");
 		String title = driver.getTitle();

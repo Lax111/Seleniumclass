@@ -12,7 +12,7 @@ public class Days2 {
 		
 		System.setProperty("webdriver.Chrome.driver","C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
-		
+		 
 		//sendkeys();
 		//program 1:
 		
@@ -45,12 +45,12 @@ public class Days2 {
 		
 		
 		
-		<h2 name ="contactme" class = "section_header">CONTACT US</h2>
-		
-		WebElement heading = driver.findElement(By.cssSelector("#contact_me > div > div:nth-child(1) > div > h2"));
-		String text = heading.getText();
-		System.out.println(text);
-		
+//		<h2 name ="contactme" class = "section_header">CONTACT US</h2>
+//		
+//		WebElement heading = driver.findElement(By.cssSelector("#contact_me > div > div:nth-child(1) > div > h2"));
+//		String text = heading.getText();
+//		System.out.println(text);
+//		
 		
 		
 		//program 2

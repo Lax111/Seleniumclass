@@ -41,13 +41,6 @@ public class Day2 {
 		//WebElement heading = driver.findElement(By.cssSelector("#item_3_title_link > div"));
 		
 		WebElement heading = driver.findElement(By.cssSelector("#item_5_title_link > div"));
-
-
-		
-		
-		
-	
-		
 		
 		if(heading.isDisplayed()) {
 			System.out.println("Test case pass");
@@ -56,8 +49,8 @@ public class Day2 {
 			System.out.println("Test case fail");
 		}
 		 
-		 
-		 
+		
+	
 		 
 	}
 

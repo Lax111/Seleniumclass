@@ -10,6 +10,7 @@ public class Day3 {
 	
 		System.setProperty("webdriver.Chrome.driver","C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
+		 
 		
 		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
 		 
@@ -22,12 +23,17 @@ public class Day3 {
 		//xpath , CSS selector
 		
 		//tagName
+		//finging element with tagName to find the "CONTACT US" element
+		//{in DOM command f and type *tagName that is highlighted*}
+		
 		WebElement headTwo = driver.findElement(By.cssSelector("h2"));
 		String q1 = headTwo.getText();
 		System.out.println(q1);
 		//CONTACT US
 		
 		//class
+		//finding element with class to find the "CONTACT US" text element 
+		//{in DOM command f and type .*Valueofthatattribute*}ex:.section_header
 		
 		WebElement headTwob= driver.findElement(By.cssSelector(".section_header"));
 		String q2 = headTwo.getText();
@@ -35,6 +41,9 @@ public class Day3 {
 		//CONTACT US
 		
 		//id
+		//finding element with id to validate that "CONTACT US" is displayed
+		//{in DOM command f and type *[id]*}
+		
 		
 		//<form action = "contact_us.php" method = "post" id = "contact_form">
 		
@@ -56,12 +65,12 @@ public class Day3 {
 			System.out.println("Testcase 1 pass");
 		}
 			else {
-				System.out.println("Testcase Fail");
+				System.out.println("Testcase 1 Fail");
 			}
 		
 		//CONTACT US
 		
-		//Testcase2 (happy path)
+		//Testcase2 (happy path)(positive testcase)
 		
 		//Arrange
 		
@@ -76,7 +85,6 @@ public class Day3 {
 		driver.findElement(By.cssSelector("#contact_form > input:nth-child(3)")).sendKeys("chapagailax@gmail.com");
 		driver.findElement(By.cssSelector("#contact_form > textarea")).sendKeys("selenium");
 		driver.findElement(By.cssSelector("#form_buttons > input:nth-child(2)")).submit();
-		
 		
 		//Assertion
 		
@@ -112,6 +120,8 @@ public class Day3 {
 		
 		//Testcase 4#contact_form > input:nth-child(1)
 		
+		//reset
+		
 		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
 		
 		driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).sendKeys("laxmic");
@@ -120,27 +130,38 @@ public class Day3 {
 		driver.findElement(By.cssSelector("#contact_form > textarea")).sendKeys("seleniums");
 		driver.findElement(By.cssSelector("#form_buttons > input:nth-child(2)")).click();
 		
-		String q6 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).getText();
-		System.out.println(q6);
-		
-		if(q6.isEmpty()) {
-			System.out.println("Testcase 4 pass");
+//		String q6 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).getText();
+//		System.out.println(q6);
+//		
+//		if(q6.isEmpty()){
+//			System.out.println("Testcase 4 pass");
+//			
+//		}
+//		else {
+//			System.out.println("Testcase 4 fail");
 			
-		}
-		else {
-			System.out.println("Testcase 4 fail");
-		}
 		
+			
+			
 		
+		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
 		
-		
-		
-		
-		
-		
-		
-	}		
+//				boolean q6 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).getText().isEmpty();
+				String q6 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).getText(); 
+				  
+				  System.out.println(q6); 
+				  
+				  if(q6.isEmpty()) { 
+				   System.out.println("Test case 4 pass"); 
+				  } 
+				  else
 
-}
+				
+				{ 
+				   System.out.println("Test case 4 Fail"); 
+				  }    			
+				
+		}		
+	}		
 
 
