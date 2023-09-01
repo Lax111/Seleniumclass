@@ -17,8 +17,7 @@ public class DAY4 {
 		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
 		
 		
-		//getText()
-		
+		//getText()	
 		
 		WebElement e1 = driver.findElement(By.cssSelector(".section_header"));
 		String q1 = e1.getText();

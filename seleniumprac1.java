@@ -19,12 +19,12 @@ public class seleniumprac1 {
 	
 	
 	//WebElement login = driver.findElement(By.cssSelector("#nav-al-signin"));
-	WebElement email = driver.findElement(By.cssSelector("#ap_email"));
-	WebElement password = driver.findElement(By.cssSelector("#ap_password"));
-	
-	password.sendKeys("password123");
-	email.sendKeys("chapagainlaxmi108@gmail.com");
-	//login.click();
+//	WebElement email = driver.findElement(By.cssSelector("#ap_email"));
+//	WebElement password = driver.findElement(By.cssSelector("#ap_password"));
+//	
+//	password.sendKeys("password123");
+//	email.sendKeys("chapagainlaxmi108@gmail.com");
+//	//login.click();
 	
 
 
@@ -35,13 +35,13 @@ public class seleniumprac1 {
 	
 	
 	
-//System.out.println("page title is:" + title);
-//
-//	if(title.equals("Amazon")) {
-//	System.out.println("correct title");
-//	}
-//	else {
-//		System.out.println("incorrect title");
+System.out.println("page title is:" + title);
+
+	if(title.equals("Amazon")) {
+	System.out.println("correct title");
+	}
+	else {
+		System.out.println("incorrect title");
 
 	}
 
