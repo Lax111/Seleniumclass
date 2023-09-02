@@ -6,11 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class practi {
+public class METHODOFWEBDRIVER {
 
 	public static void main(String[] args) {
-		
-		
 		
 		System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
@@ -45,9 +43,9 @@ public class practi {
 			
 			
 			//driver.findElement:
-//			
-//			WebElement username = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
-//			username.sendKeys("lax");
+		
+			WebElement username = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
+		username.sendKeys("lax");
 
 			//driver.findElements:
 			
@@ -56,16 +54,21 @@ public class practi {
 			    System.out.println(link.getText());
 			
 			// driver.close:
-//			driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
-//					driver.close();
-////					
+		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
+				//driver.close();
+					
 					
 					// driver.quite:
-//					driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
-//							driver.quit();
-//							
+					driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
+						//driver.quit();
+						
 		}
 
 	}
 
-}}
+
+
+
+	}
+
+}
