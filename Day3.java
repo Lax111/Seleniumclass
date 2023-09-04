@@ -57,7 +57,7 @@ public class Day3 {
 		//tagName[attribute= "value"]
 		
 		//Test 3
-		driver.findElement(By.cssSelector("h2[name = \"contactme\"]"));
+		WebElement headThreeD = driver.findElement(By.cssSelector("h2[name = \"contactme\"]"));
 		String q3 = headTwo.getText();
 		System.out.println(q3);
 		
@@ -146,7 +146,7 @@ public class Day3 {
 		
 		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
 		
-//				boolean q6 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).getText().isEmpty();
+//			boolean q6 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).getText().isEmpty();
 				String q6 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).getText(); 
 				  
 				  System.out.println(q6); 

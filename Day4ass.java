@@ -1,5 +1,6 @@
 package selenoumtutorial1;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -65,6 +66,45 @@ public class Day4ass {
             System.out.println("No images displayed or Test Case 4 failed.");
         }
 
+        System.out.println("*********");
+        
+        driver.get("https://www.saucedemo.com/");
+     // Testcase 1 
+        String expected ="Sauce Labs Bolt T-Shirt"; 
+        performLogin(driver, "standard_user", "secret_sauce"); 
+        boolean productFound = false; 
+        List<WebElement> items = driver.findElements(By.cssSelector(".inventory_item_name")); 
+        for(int i =0; i< items.size(); i++) { 
+         System.out.println(items.get(i).getText()); 
+         if(items.get(i).getText().equals(expected)) { 
+          productFound = true; 
+          break; 
+         } 
+        } 
+        if(productFound) { 
+         System.out.println("Product is available"); 
+         System.out.println("Test case 1 passed"); 
+        } 
+        else 
+        { 
+         System.out.println("Product is no available"); 
+         System.out.println("Test case 1 Failed"); 
+        }    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 
