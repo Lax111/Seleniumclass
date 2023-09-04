@@ -10,8 +10,6 @@ public class seleniumExam4 {
 		// TODO Auto-generated method stub
 
 		
-		
-		
 		System.setProperty("webdriver.Chrome.driver","C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		 
@@ -20,8 +18,6 @@ public class seleniumExam4 {
 		Select pyt = new Select(driver.findElement(By.cssSelector("#dropdowm-menu-1")));
 		pyt.selectByVisibleText("Python");
 		
-		
-
 		
 		String selectedOption = pyt.getFirstSelectedOption().getText();
         if (selectedOption.equals("Python")) {

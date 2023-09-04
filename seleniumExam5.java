@@ -14,25 +14,15 @@ public class seleniumExam5 {
 		 
 		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
 		
-		driver.findElement(By.cssSelector("#contact_me > div > div:nth-child(1) > div > h2"));
-		
-		WebElement headTwo = driver.findElement(By.cssSelector("h2"));
-		String a = headTwo.getText();
-		System.out.println(a);
-		
-		
-boolean a1 = driver.findElement(By.cssSelector("h2")).isDisplayed();
-		
-		if(a1){
-			System.out.println("Testcase  pass");
-		}
-		
-		else {
-			System.out.println("Testcase  fail");
-		
-		
-		
-		}
-	}
+		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 
-}
+			WebElement heading=driver.findElement(By.cssSelector("#main-header > h1"));
+		String headingTxt=heading.getText();
+		System.out.println(headingTxt);
+
+		}
+		
+		}
+	
+
+

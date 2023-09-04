@@ -93,7 +93,7 @@ public class Day5 {
 //		password.sendKeys("secret_sauce");
 //		login.click();
 //
-		List<WebElement> items = driver.findElements(By.cssSelector("inventory_item_name"));
+//		List<WebElement> items = driver.findElements(By.cssSelector("inventory_item_name"));
 //		
 //		boolean productFound = false;
 //		

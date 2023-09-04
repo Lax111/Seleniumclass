@@ -14,19 +14,24 @@ public class seleniumExam1 {
 		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
 		
 		
-	
-		String expectedTitle="WebDriver | Dropdown Menu";
+		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		String expectedTitle="WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)";
 		String titleOfPage = driver.getTitle();
 		
 		if(expectedTitle.equals(titleOfPage)) {
-		System.out.println("Test case 1 passed.");
+		System.out.println("Test case passed.");
+		}
+		
 		}
 		
 		
 		
+	
 		
 		
+		}
 		
-	}
+		
+	
 
-}
+	
