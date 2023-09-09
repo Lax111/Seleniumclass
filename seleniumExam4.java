@@ -14,20 +14,36 @@ public class seleniumExam4 {
 		ChromeDriver driver = new ChromeDriver();
 		 
 		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
+//		
+//		Select pyt = new Select(driver.findElement(By.cssSelector("#dropdowm-menu-1")));
+//		pyt.selectByVisibleText("Python");
+//		
+//		
+//		String selectedOption = pyt.getFirstSelectedOption().getText();
+//        if (selectedOption.equals("Python")) {
+//            System.out.println("Python is selected");
+//        } else {
+//            System.out.println("Python is not selected");
+//        }
+		
+		
+
 		
 		Select pyt = new Select(driver.findElement(By.cssSelector("#dropdowm-menu-1")));
-		pyt.selectByVisibleText("Python");
-		
-		
-		String selectedOption = pyt.getFirstSelectedOption().getText();
-        if (selectedOption.equals("Python")) {
-            System.out.println("Python is selected");
-        } else {
-            System.out.println("Python is not selected");
-        }
-		
-		
-		
+     
+     pyt.selectByVisibleText("Python");
+     
+     String selectedOption = pyt.getFirstSelectedOption().getText();
+     if(selectedOption.equals("Python")) {
+    	 System.out.println("Python is selected");
+     }
+    	 else {
+    		System.out.println("Python is not selected"); 
+    	 }
+     }
+     
+    
+     
 	}
 
-}
+

@@ -15,19 +15,16 @@ public class seleniumExam1 {
 		
 		
 		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
-		String expectedTitle="WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)";
-		String titleOfPage = driver.getTitle();
+//		String expectedTitle="WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)";
+//		String titleOfPage = driver.getTitle();
+//		
+//		if(expectedTitle.equals(titleOfPage)) {
+//		System.out.println("Test case passed.");
+//		}
 		
-		if(expectedTitle.equals(titleOfPage)) {
-		System.out.println("Test case passed.");
 		}
-		
-		}
-		
-		
-		
 	
-		
+	
 		
 		}
 		

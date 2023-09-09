@@ -18,21 +18,17 @@ public class day1 {
 	driver.manage().window().maximize();
 	
 	
-//	WebElement username = driver.findElement(By.cssSelector("#app > div.orangehrm-login-layout > div > div.orangehrm-login-container > div > div.orangehrm-login-slot > div.orangehrm-login-form > form > div:nth-child(2) > div > div:nth-child(2) > input"));
-//	WebElement password = driver.findElement(By.cssSelector("#app > div.orangehrm-login-layout > div > div.orangehrm-login-container > div > div.orangehrm-login-slot > div.orangehrm-login-form > form > div:nth-child(3) > div > div:nth-child(2) > input"));
-//	WebElement login = driver.findElement(By.cssSelector("#app > div.orangehrm-login-layout > div > div.orangehrm-login-container > div > div.orangehrm-login-slot > div.orangehrm-login-form > form > div.oxd-form-actions.orangehrm-login-action > button"));
-//	
-//	
-	WebElement username = driver.findElement(By.name("#username"));
-	WebElement password = driver.findElement(By.name("#password"));
-	WebElement login = driver.findElement(By.name("#oxd-form-actions orangehrm-login-action"));
 	
+	WebElement username = driver.findElement(By.name("username"));
+	WebElement password = driver.findElement(By.name("password"));
+	//WebElement login = driver.findElement(By.name("oxd-button oxd-button--medium oxd-button--main orangehrm-login-button"));
 	
+	//WebElement username = driver.findElement(By.cssSelector("#user-name"));
 	
 	
 	username.sendKeys("Admin");
 	 password.sendKeys("admin123");
-	 login.click();
+	// login.click();
  
 	 
 	 

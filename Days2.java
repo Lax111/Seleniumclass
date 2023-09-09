@@ -21,26 +21,26 @@ public class Days2 {
        driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
        driver.manage().window().maximize();
        
-//		WebElement first_name = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
-//	    WebElement last_name = driver.findElement(By.cssSelector("#contact_form > input:nth-child(2)"));
-//		WebElement email_address = driver.findElement(By.cssSelector("#contact_form > input:nth-child(3)"));
-//		WebElement message = driver.findElement(By.cssSelector("#contact_form > textarea"));
-//		WebElement reset_button = driver.findElement(By.cssSelector("#form_buttons > input:nth-child(1)"));
-//		
-//		 
-//		first_name.sendKeys("lax");
-//		last_name.sendKeys("chapagain");
-//		email_address.sendKeys("chapagainlaxmi108@gmail.com");
-//		message.sendKeys("I am learning selenium");
-//		reset_button.click();
-//		
+		WebElement first_name = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
+	    WebElement last_name = driver.findElement(By.cssSelector("#contact_form > input:nth-child(2)"));
+		WebElement email_address = driver.findElement(By.cssSelector("#contact_form > input:nth-child(3)"));
+		WebElement message = driver.findElement(By.cssSelector("#contact_form > textarea"));
+		WebElement reset_button = driver.findElement(By.cssSelector("#form_buttons > input:nth-child(1)"));
+		
+		 
+		first_name.sendKeys("lax");
+		last_name.sendKeys("chapagain");
+		email_address.sendKeys("chapagainlaxmi108@gmail.com");
+		message.sendKeys("I am learning selenium");
+		reset_button.click();
+		
 		//clear()
 				
-//	WebElement first_name = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
-//	
-//first_name.sendKeys("lax");
-//		first_name.clear();
-//	
+	WebElement first_name1 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
+	
+     first_name1.sendKeys("lax");
+		first_name1.clear();
+	
 		//text()
 		
 		
@@ -61,9 +61,9 @@ public class Days2 {
 		//is_displayed();
 		//g2 --- true
 		
-//		WebElement header = driver.findElement(By.cssSelector("h1"));
-//       boolean g2 = header.isDisplayed();
-//       System.out.println(g2);
+	WebElement header = driver.findElement(By.cssSelector("h1"));
+      boolean g2 = header.isDisplayed();
+     System.out.println(g2);
 //		
 //		//is_enabled()
 //		//g3 --- true
@@ -87,5 +87,5 @@ public class Days2 {
 		//boolean g5 = isSelected_radioB.isSelected();
 	//System.out.println(g5);
 	
-
+	
 }}

@@ -19,18 +19,16 @@ public class seleniumExam3 {
 		
 		
 		  driver.navigate().to("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html"); 
-		  List<WebElement> check= driver.findElements(By.xpath("//input[@type='checkbox']")); 
-		  System.out.println("total :" + check.size()); 
-		  for(int b =0; b < check.size(); b++) 
-		  { 
-		   System.out.println("Check boxes :"+check.get(b).getAttribute("value")); 
-		  }
+		  WebElement orange =driver.findElement(By.cssSelector("#radio-buttons > input[type=radio]:nth-child(7)"));
+//		  
+//			orange.click();
+//			boolean RB1 = orange.isSelected();
+//			if(RB1==true) {
+//				System.out.println("Orange radio button is selected.");
+//		
+//		
 		
-		
-		
-		  //#radio-buttons
-		
-		
+				
 	}
 
-}
+	}

@@ -18,12 +18,37 @@ public class seleniumExam2 {
 		
 		
 		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html"); 
-		  List<WebElement> linkes = driver.findElements(By.xpath("//input[@type='radio']"));
-		  
-		  System.out.println("Total :"+ linkes.size()); 
-		  for(int x = 0; x <linkes.size(); x++) { 
-		   System.out.println("Radio Button: "+ linkes.get(x).getAttribute("value")); 
+		 
+		
+		//driver.findElement(By.cssSelector("#checkboxes > label:nth-child(1)"))
+		
+
+		WebElement RBopt1=driver.findElement(By.cssSelector("#checkboxes > label:nth-child(1) > input[type=checkbox]"));
+		WebElement RBopt2=driver.findElement(By.cssSelector("#checkboxes > label:nth-child(3) > input[type=checkbox]"));
+		WebElement RBopt4=driver.findElement(By.cssSelector("#checkboxes > label:nth-child(7) > input[type=checkbox]"));
+		WebElement RBopt3=driver.findElement(By.cssSelector("#checkboxes > label:nth-child(5) > input[type=checkbox]"));
+		RBopt1.click();
+		RBopt2.click();
+		RBopt4.click();
+			
+		//Assertion
+		boolean RB1 = RBopt1.isSelected();
+		boolean RB2 = RBopt2.isSelected();
+		boolean RB3 = RBopt3.isSelected();
+		boolean RB4 = RBopt4.isSelected();
+		
+		System.out.println(RB1);
+		System.out.println(RB2);
+		System.out.println(RB3);
+		System.out.println(RB4);
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		  }}
-}
+
