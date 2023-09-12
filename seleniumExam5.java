@@ -14,15 +14,15 @@ public class seleniumExam5 {
 		 
 		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
 		
-//		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 //
-//			WebElement heading=driver.findElement(By.cssSelector("#main-header > h1"));
-//		String headingTxt=heading.getText();
-//		System.out.println(headingTxt);
-//
-//		}
-	}
+//			WebElement heading=driver.findElement(By.cssSelector("#main-header > h1"));	
+//			String headingTxt=heading.getText();
+//	          System.out.println(headingTxt);
+
 		}
+	}
+		
 	
 
 

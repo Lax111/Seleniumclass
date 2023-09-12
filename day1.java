@@ -30,7 +30,10 @@ public class day1 {
 	 password.sendKeys("admin123");
 	// login.click();
  
-	 
+	//Searching the dropdown elements by locating its className:
+	  /* WebElement ddown = driver.findElement(By.className("dropdown-menu-lists"));
+	   Select select = new Select(ddown);
+	    */
 	 
 	 
 	 

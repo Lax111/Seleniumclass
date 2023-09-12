@@ -19,7 +19,7 @@ public class Day2 {
 		 
 		 driver.get("https://www.saucedemo.com/");
 		 driver.manage().window().maximize();
-		 
+		
 		 
 		WebElement username = driver.findElement(By.cssSelector("#user-name"));
 		WebElement password = driver.findElement(By.cssSelector("#password"));
