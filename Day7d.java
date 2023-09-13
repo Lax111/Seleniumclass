@@ -16,6 +16,7 @@ public class Day7d {
 
 	public static void main(String[] args) {
 		
+		//FluentWait
 		
 		System.setProperty("webdriver.Chrome.driver","C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
@@ -49,7 +50,7 @@ public class Day7d {
 		
 	});
 		
-	}	
+	}}	
 		
 
 	
