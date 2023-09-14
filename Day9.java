@@ -10,46 +10,43 @@ public class Day9 {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.Chrome.driver","C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
+		 
+		 driver.get("https://www.saucedemo.com/inventory.html");
+		 driver.manage().window().maximize();
+		
+		 String parent = driver.getWindowHandle();
+		 System.out.println("Parent window id is"+parent);
+		 
+		driver.findElement(By.cssSelector("#item_4_title_link > div")).click();
+		//driver.findElement(By.cssSelector("//div[@id=\"item_4_title_link\"]/div")).click();
 
-		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		 Set<String> allWindows = driver.getWindowHandles();
 		
-		String parentWindow = driver.getWindowHandle();
-		System.out.println(parentWindow);
+		int count = allWindows.size();
+		System.out.println("Total window"+count);
 		
-		driver.findElement(By.cssSelector("#contact-us")).click();
+//		for(String child:allWindows) {
+//		
+//			if(!parent.equalsIgnoreCase(child)) {
+//				driver.switchTo().window(child);
+//				
+//				driver.findElement(By.name("q")).sendKeys("Selenium Webdriver");
+//				
+//				Thread.sleep(3000);
+//				driver.close();
+//			}}
+//			
+//			driver.switchTo().window(parent);
+//			System.out.println("Parent window title is"+driver.getTitle());
+//			
+			
+			
+			
+			
+			
 		
-		Set<String> windows = driver.getWindowHandles();
-		for(String window:windows) {
-		if(!window.equals(parentWindow)) {
-			driver.switchTo().window(window);
-			break;
-		}
-		}
-		System.out.println(driver.getCurrentUrl());
-		
-		WebElement first_name = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
-	    WebElement last_name = driver.findElement(By.cssSelector("#contact_form > input:nth-child(2)"));
-		WebElement email_address = driver.findElement(By.cssSelector("#contact_form > input:nth-child(3)"));
-		WebElement message = driver.findElement(By.cssSelector("#contact_form > textarea"));
-		WebElement submit_button = driver.findElement(By.cssSelector("#form_buttons > input:nth-child(2)"));
-		
-		 //click:
-		first_name.sendKeys("lax");
-		last_name.sendKeys("chapagain");
-		email_address.sendKeys("chapagainlaxmi108@gmail.com");
-		message.sendKeys("I am learning selenium");
-		submit_button.click();
-		
-		
-		driver.switchTo().window(parentWindow);
-		System.out.println(driver.getCurrentUrl());
-		
-		
-		}	
-		
-		
-	}
+}}
 
 

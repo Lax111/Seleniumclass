@@ -13,12 +13,12 @@ public class Day10 {
 		System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 
-		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		driver.get("http://www.webdriveruniversity.com");
 		
 		String parentWindow = driver.getWindowHandle();
 		System.out.println(parentWindow);
 		
-		driver.findElement(By.cssSelector("#contact-us")).click();
+		  driver.findElement(By.cssSelector("#contact-us")).click();
 		
 		Set<String> windows = driver.getWindowHandles();
 		for(String window:windows) {
