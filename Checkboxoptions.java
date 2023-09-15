@@ -32,8 +32,8 @@ public class Checkboxoptions {
     	 if(chebox.isSelected()) {
     		 chebox.click();
     	
-    		 String checkboxText = chebox.getAttribute("value");
-    		 System.out.println(checkboxText);
+    		 String cheboxTxt = chebox.getAttribute("value");
+    		 System.out.println(cheboxTxt);
     		 
     		
     		 

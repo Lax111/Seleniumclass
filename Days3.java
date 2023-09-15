@@ -13,11 +13,11 @@ public class Days3 {
 
 		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
 
+		
 		// <h2 name="contactme" class ="section_header">CONTACT US</h2>;
+        // xpath , CSS selector
 
-		// xpath , CSS selector
-
-		// tagName
+		// tagName #contact_me > div > div:nth-child(1) > div > h2
 		// finging element with tagName to find the "CONTACT US" element
 		// {in DOM command f and type *tagName that is highlighted*}ex:{h2}
 
@@ -38,10 +38,18 @@ public class Days3 {
 		System.out.println(b);
 
 		// id:
+		
+          //finding element with id to validate that "CONTACT US" is displayed
+		  //{in DOM command f and type *[id]*}
 
+		
 		// <form action="contact_us.php" method="post" id="contact_form">
 
 		WebElement headonec = driver.findElement(By.cssSelector("#contact_form"));
+		//String h = headTwoc.getText();
+		 //System.out.println(h);
+		
+		
 		boolean c = headonec.isDisplayed();
 		System.out.println(c);
 
@@ -49,7 +57,16 @@ public class Days3 {
 
 		// tagName[attribute= "value"]
 
+		//finding element by any attribute
+	    //tagName[attribute= "value"]
+		
+		
+		//Test case 1:
 		WebElement headoned = driver.findElement(By.cssSelector("h2[name=\"contactme\"]"));
+	//  WebElement headThreed = driver.findElement(By.cssSelector("h2[name=\"contactme\"]"));
+		 // boolean q8 =headThreed.isDisplayed();
+		  //  System.out.println(q8);
+		
 		String d = headoned.getText();
 		System.out.println(d);
 
@@ -95,7 +112,7 @@ public class Days3 {
 			System.out.println("test case 3 fail");
 		}
 
-		// Testcase4:
+		// Testcase4:  reset: #form_buttons > input:nth-child(1)
 
 		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
 
@@ -105,6 +122,8 @@ public class Days3 {
 		driver.findElement(By.cssSelector("#contact_form > textarea")).sendKeys("selenium class");
 		driver.findElement(By.cssSelector("#form_buttons > input:nth-child(1)")).click();
 
+		//reset first name
+		
 		String g = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).getText();
 		System.out.println(g);
 

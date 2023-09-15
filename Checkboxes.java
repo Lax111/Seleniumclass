@@ -21,8 +21,8 @@ public class Checkboxes {
 		
 		//for loop:
 		
-//		for(int i=0; i <checkboxes.size();i++ ) {
-//			checkboxes.get(i).click();
+	//for(int i=0; i <checkboxes.size();i++ ) {
+			//checkboxes.get(i).click();
 	//}
 		
 	//for each loop:
@@ -36,4 +36,4 @@ public class Checkboxes {
 //			
 	}}
 
-}
+	}

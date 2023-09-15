@@ -56,7 +56,14 @@ public class Day3 {
 		//anyAttribute
 		//tagName[attribute= "value"]
 		
-		//Test 3
+		 // there is no id in contact-us
+        WebElement headTwoC = driver.findElement(By.cssSelector("#contact_me"));
+         
+         boolean q = headTwoC.isDisplayed();
+         System.out.println(q);
+         
+		//Test case 1
+		
 		WebElement headThreeD = driver.findElement(By.cssSelector("h2[name = \"contactme\"]"));
 		String q3 = headTwo.getText();
 		System.out.println(q3);
@@ -130,23 +137,9 @@ public class Day3 {
 		driver.findElement(By.cssSelector("#contact_form > textarea")).sendKeys("seleniums");
 		driver.findElement(By.cssSelector("#form_buttons > input:nth-child(2)")).click();
 		
-//		String q6 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).getText();
-//		System.out.println(q6);
-//		
-//		if(q6.isEmpty()){
-//			System.out.println("Testcase 4 pass");
+	
+		 driver.findElement(By.cssSelector("#form_buttons > input:nth-child(1)")).getText();
 //			
-//		}
-//		else {
-//			System.out.println("Testcase 4 fail");
-			
-		
-			
-			
-		
-		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
-		
-//			boolean q6 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).getText().isEmpty();
 				String q6 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).getText(); 
 				  
 				  System.out.println(q6); 

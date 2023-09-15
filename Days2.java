@@ -36,12 +36,12 @@ public class Days2 {
 		
 		//clear()
 				
-	WebElement first_name1 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
-	
-     first_name1.sendKeys("lax");
-		first_name1.clear();
-	
-		//text()
+//	WebElement first_name1 = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
+//	
+//     first_name1.sendKeys("lax");
+//		first_name1.clear();
+//	
+//		//text()
 		
 		
 		
