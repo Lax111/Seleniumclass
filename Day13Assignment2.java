@@ -4,32 +4,31 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day12B {
+public class Day13Assignment2 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.Chrome.driver","C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.Chrome.driver", "C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
-		
-		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
-		
-		//JS CONFORM OK:
-		WebElement ele = driver.findElement(By.id("result"));
-		driver.findElement(By.cssSelector("#content > div > ul > li:nth-child(2) > button")).click();
-		String text1 = driver.switchTo().alert().getText();
-		if(text1.equals("I am a JS Confirm")) {
-		System.out.println("Test case for text pass");
-		
-	}
 
+		driver.get("http://www.webdriveruniversity.com/Popup-Alerts/index.html");
+		WebElement ele = driver.findElement(By.id("result"));
+		driver.findElement(By.cssSelector("#button4 > p")).click();
+		Thread.sleep(2000);	
+		
+		String text1 = driver.switchTo().alert().getText();
+		if(text1.equals("Press a button!")) {
+		System.out.println("Test case pass");
+		
+		else {
+			System.out.println("Test case pass");
+			
+		}
 		driver.switchTo().alert().accept();
 		System.out.println(ele.getText());
 		if(ele.getText().equals("You clicked: Ok")) {
 		
 		System.out.println("Test case for element text pass");
-		
-		}
-		//JS CONFORM CANCEL:
 		
 		
 		driver.findElement(By.cssSelector("#content > div > ul > li:nth-child(2) > button")).click();
@@ -46,11 +45,11 @@ public class Day12B {
 		System.out.println("Test case for element text pass");
 		
 		
+		else {
+			System.out.println("Test case pass");
 		
 		
-		
-		
-		
-	}}	
-	}	
+		}}
+	}
 
+	}

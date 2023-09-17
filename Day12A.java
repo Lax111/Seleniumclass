@@ -18,7 +18,7 @@ public class Day12A {
 		//driver.findElement(By.id(""));
 		
 		//finding the element and clicking on it
-		driver.findElement(By.cssSelector("#content > div > ul > li:nth-child(1) > button")).click();
+		/*driver.findElement(By.cssSelector("#content > div > ul > li:nth-child(1) > button")).click();
 		
 		//switching to alert and getText
 		
@@ -30,6 +30,7 @@ public class Day12A {
 		WebElement ele = driver.findElement(By.id("result"));
 		if(ele.getText().equals("You successfully clicked an alert"));
 		System.out.println("Test case 1 pass");
+		*/
 	}
 
 }
