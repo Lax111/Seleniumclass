@@ -21,14 +21,14 @@ public class day1 {
 	
 	WebElement username = driver.findElement(By.name("username"));
 	WebElement password = driver.findElement(By.name("password"));
-	//WebElement login = driver.findElement(By.name("oxd-button oxd-button--medium oxd-button--main orangehrm-login-button"));
+	WebElement login = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"));
 	
 	//WebElement username = driver.findElement(By.cssSelector("#user-name"));
 	
 	
 	username.sendKeys("Admin");
 	 password.sendKeys("admin123");
-	// login.click();
+	 login.click();
  
 	//Searching the dropdown elements by locating its className:
 	  /* WebElement ddown = driver.findElement(By.className("dropdown-menu-lists"));
