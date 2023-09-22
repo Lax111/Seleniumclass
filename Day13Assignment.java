@@ -14,6 +14,7 @@ public class Day13Assignment {
 		
 		driver.get("http://www.webdriveruniversity.com/Popup-Alerts/index.html");
 		
+		//JAVA SCRIPT ALERT CLICK ME!
 		driver.findElement(By.cssSelector("#button1 > p")).click();
 		String str = driver.switchTo().alert().getText();
 		if(str.equals("I am an alert box!")) {

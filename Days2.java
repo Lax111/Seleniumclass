@@ -68,24 +68,24 @@ public class Days2 {
 //		//is_enabled()
 //		//g3 --- true
 //		
-//	WebElement inabled_radioB = driver.findElement(By.cssSelector("#radio-buttons-selected-disabled >input[type=radio]:nth-child(1)"));
-//	boolean g3 = inabled_radioB.isEnabled();
-//		System.out.println(g3);
+	WebElement inabled_radioB = driver.findElement(By.cssSelector("#radio-buttons-selected-disabled >input[type=radio]:nth-child(1)"));
+	boolean g3 = inabled_radioB.isEnabled();
+	System.out.println(g3);
 //		
 		//is_disabled()
 		//Q4 --false
 		
-		//WebElement disabled_radioB = driver.findElement(By.cssSelector("#radio-buttons-selected-disabled >input[type=radio]:nth-child(3)"));
-	    //boolean g4 = disabled_radioB.isEnabled();
-	    //System.out.println(g4);
+		WebElement disabled_radioB = driver.findElement(By.cssSelector("#radio-buttons-selected-disabled >input[type=radio]:nth-child(3)"));
+	    boolean g4 = disabled_radioB.isEnabled();
+	    System.out.println(g4);
 	
 		
 	//is_selected()
 	//Q5 --false
 	
-	//WebElement isSelected_radioB = driver.findElement(By.cssSelector("#radio-buttons-selected-disabled >input[type=radio]:nth-child(5)"));
-		//boolean g5 = isSelected_radioB.isSelected();
-	//System.out.println(g5);
+	WebElement isSelected_radioB = driver.findElement(By.cssSelector("#radio-buttons-selected-disabled >input[type=radio]:nth-child(5)"));
+		boolean g5 = isSelected_radioB.isSelected();
+	System.out.println(g5);
 	
 	
 }}

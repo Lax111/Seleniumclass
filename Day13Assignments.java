@@ -11,6 +11,8 @@ public class Day13Assignments {
 		ChromeDriver driver = new ChromeDriver();
 
 		driver.get("http://www.webdriveruniversity.com/Popup-Alerts/index.html");
+		
+		//MODEL POPUP CLICK ME!
 		driver.findElement(By.cssSelector("#button2 > p")).click();
 		Thread.sleep(2000);
 		

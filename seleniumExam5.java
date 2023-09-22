@@ -12,14 +12,22 @@ public class seleniumExam5 {
 		System.setProperty("webdriver.Chrome.driver","C:\\Users\\chapa\\Downloads\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		 
-		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
+		//driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html"); 
 		
-		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		//driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 //
 //			WebElement heading=driver.findElement(By.cssSelector("#main-header > h1"));	
 //			String headingTxt=heading.getText();
 //	          System.out.println(headingTxt);
 
+		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		
+		
+		//is_displayed()
+		WebElement header = driver.findElement(By.cssSelector("h1"));
+		boolean q1 = header.isDisplayed();
+		System.out.println(q1);
+		
 		}
 	}
 		

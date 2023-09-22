@@ -52,16 +52,6 @@ public class Day13Assignment5 {
 				    else {
 				      System.out.println("Test case fail");
 				    }
-				  }
-
-				
-
-				
-		
-		
-		
-		
-		
-	}
-
-
+				  }	
+}
+	
