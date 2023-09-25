@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day13 {
+public class Day13tables {
 
 	public static void main(String[] args) {
 
@@ -37,13 +37,13 @@ public class Day13 {
 //		int totalRows = rows.size();
 //		System.out.println(rows.size());
 //
-//		
+//		//when we inspect Age:
 //		List<WebElement> columns = driver.findElements(By.xpath("//*[@id=\"t01\"]/tbody/tr[3]/td"));
 //		int totalColumns = columns.size();
 //		System.out.println((totalColumns));
 //		
 //		//*[@id="t01"]/tbody/tr[2]/td[3]
-//		
+//	
 //		int sum = 0;
 //		
 //		for(int i=2; i <= totalRows;i++) {
@@ -58,9 +58,9 @@ public class Day13 {
 //	}
 //	System.out.println(sum);
 //		
-//	// find the person with Michael	
+//	// find the person with Michael	(first name)
 //
-//	
+//
 //	for(int i = 2 ; i <= totalRows ; i++) {
 //		String text = driver.findElement(By.xpath("//*[@id=\"t01\"]/tbody/tr["+i+"]/td[1]")).getText();
 //		System.out.println(text);
@@ -69,7 +69,7 @@ public class Day13 {
 //			break;
 //	}
 //	}
-//	
+//	// find the person with Michael (lase name)	
 //	for(int i = 2 ; i <= totalRows ; i++) {
 //		String text = driver.findElement(By.xpath("//*[@id=\"t01\"]/tbody/tr["+i+"]/td[2]")).getText();
 //		System.out.println(text);
@@ -81,12 +81,10 @@ public class Day13 {
 //	
 //	
 //	
-//	
 //		}}
 //	
 //	
-//	//*[@id="t01"]/tbody/tr[4]/td[1]
-//
+//	
 //}}
 //
 //

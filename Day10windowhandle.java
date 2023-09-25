@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day10 {
+public class Day10windowhandle {
 
 	public static void main(String[] args) {
 		
@@ -25,11 +25,14 @@ public class Day10 {
 		for(String window:windows) {
 		if(!window.equals(parentWindow)) {
 			driver.switchTo().window(window);
+			System.out.println(window + "\tchild");
 			break;
+			
 		}
 		}
 		System.out.println(driver.getCurrentUrl());
-		
+		System.out.println(windows);
+	
 		WebElement first_name = driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
 	    WebElement last_name = driver.findElement(By.cssSelector("#contact_form > input:nth-child(2)"));
 		WebElement email_address = driver.findElement(By.cssSelector("#contact_form > input:nth-child(3)"));
@@ -46,6 +49,9 @@ public class Day10 {
 		
 		driver.switchTo().window(parentWindow);
 		System.out.println(driver.getCurrentUrl());
+		
+		
+		
 		
 		
 		}	

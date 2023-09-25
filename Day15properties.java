@@ -9,7 +9,7 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day15 {
+public class Day15properties {
 
 	public static void main(String[] args) {
 		
@@ -31,10 +31,10 @@ public class Day15 {
 			
 			prop.put("city","baltimore");
 			
-			FileOutputStream outputStream = new FileOutputStream(path);
+			FileOutputStream outputStrem = new FileOutputStream(path);
 			
 			// Storing the properties file
-			prop.store(outputStream, "This is a sample properties file");
+			prop.store(outputStrem, "This is a sample properties file");
 			
 			if(browser.equals("chrome")) {
 				
@@ -46,7 +46,7 @@ public class Day15 {
 				driver.get(url);
 				
 				driver.findElement(By.cssSelector("#user-name")).sendKeys(un);
-				driver.findElement(By.cssSelector("#password")).sendKeys(un);
+				driver.findElement(By.cssSelector("#password")).sendKeys(pd);
 				driver.findElement(By.cssSelector("#login-button")).click();
 				
 				if(driver.getCurrentUrl().contains("inventory")) {
@@ -56,7 +56,7 @@ public class Day15 {
 					System.out.println("Test case fail");
 				}
 				
-				else if(browser.equals("firefox")) {
+			}else if(browser.equals("firefox")) {
 					// code to setup firefox
 			}
 				else if(browser.equals("edge")) {
@@ -65,7 +65,7 @@ public class Day15 {
 			
 			}catch(FileNotFoundException e) {
 				e.printStackTrace();
-			}
+			
 			
 		}catch(IOException e) {
 			e.printStackTrace();

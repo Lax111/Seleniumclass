@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day12A {
+public class Day12ajsalert {
 
 	public static void main(String[] args) {
 		
